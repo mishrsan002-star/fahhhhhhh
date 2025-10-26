@@ -1017,9 +1017,6 @@ var unityFramework = (() => {
         ysdk !== null &&
         ysdk.features.LoadingAPI !== undefined &&
         ysdk.features.LoadingAPI !== null
-      ) {
-        ysdk.features.LoadingAPI.ready();
-        LogStyledMessage("Game Ready");
       } else {
         console.error("Failed - Game Ready");
       }
@@ -3315,9 +3312,6 @@ var unityFramework = (() => {
     }
     function _LoadCloud_js() {
       LoadCloud();
-    }
-    function _LogStyledMessage(message) {
-      LogStyledMessage(UTF8ToString(message));
     }
     function _OpenAuthDialog_js() {
       OpenAuthDialog();
@@ -15168,7 +15162,6 @@ var unityFramework = (() => {
       Vf: _JS_WebRequest_SetRequestHeader,
       Yf: _JS_WebRequest_SetTimeout,
       Lg: _LoadCloud_js,
-      Ig: _LogStyledMessage,
       _b: _OpenAuthDialog_js,
       $b: _RequestAuth_js,
       Ug: _RequestingEnvironmentData_js,
