@@ -15,20 +15,45 @@
     <script defer="defer" src="./static/js/main.a1d9a5b9.js"></script>
     <link href="./static/css/main.2494f96b.css" rel="stylesheet" />
     <script>
-      window.gameConfig = JSON.parse(
-        decodeURIComponent(
-          escape(
-            atob(
-              "ewogICJidWlsZE5hbWUiOiAibWFnZXRvd2VyIiwKICAibmFtZSI6ICJNYWdlIFRvd2VyIElkbGUgRGVmZW5zZSIsCiAgInZlcnNpb24iOiAiMS4wLjQ4Zjc2MmNhIiwKICAicGxhdGZvcm0iOiAiY3JhenlnYW1lcyIsCiAgInVuaXR5R2FtZUNvbmZpZyI6IHsKICAgICJsb2FkZXJTY3JpcHRVcmwiOiAiLi9hc3NldHMvTWFnZVRvd2VyLjQ4Zjc2MmNhLmxvYWRlci5qcyIsCiAgICAiZGF0YVVybCI6ICIuL2Fzc2V0cy9NYWdlVG93ZXIuNDhmNzYyY2EuZGF0YS5iciIsCiAgICAiZnJhbWV3b3JrVXJsIjogIi4vYXNzZXRzL01hZ2VUb3dlci40OGY3NjJjYS5mcmFtZXdvcmsuanMuYnIiLAogICAgImNvZGVVcmwiOiAiLi9hc3NldHMvTWFnZVRvd2VyLjQ4Zjc2MmNhLndhc20uYnIiLAogICAgInN0cmVhbWluZ0Fzc2V0c1VybCI6ICJTdHJlYW1pbmdBc3NldHMiLAogICAgImZsYWdzIjogWwogICAgICAibm9fc2lkZXBhbmVsIgogICAgXQogIH0sCiAgImdhQ29uZmlnIjogewogICAgImdhbWVLZXkiOiAiMzZmZTAxNzJhNGY4NGNmNGI2ZWUwNTg4MTIwYzY2ZGMiLAogICAgInNlY3JldEtleSI6ICI3MTI0ZWY1Yzk5ZDUzODZkZmEzMjhmNWZmYjIxY2RjZWFhNGZlMTAxIgogIH0sCiAgInZpZGVvQ29uZmlnIjogWwogICAgeyAicGxhY2VtZW50SWQiOiAibGV2ZWxfdXBfeDMiLCAidHlwZSI6ICJyZXdhcmRlZCJ9LAogICAgeyAicGxhY2VtZW50SWQiOiAiaWFwX2ZyZWVfZ2VtIiwgInR5cGUiOiAicmV3YXJkZWQifSwKICAgIHsgInBsYWNlbWVudElkIjogImdhbWVfZW5kX3NvdWxzIiwgInR5cGUiOiAicmV3YXJkZWQifSwKICAgIHsgInBsYWNlbWVudElkIjogInF1ZXN0X3JlZnJlc2giLCAidHlwZSI6ICJyZXdhcmRlZCJ9LAogICAgeyAicGxhY2VtZW50SWQiOiAiZ2FtZV9zdGFydF9jbGljayIsICJ0eXBlIjogImludGVyc3RpdGlhbCJ9LAogICAgeyAicGxhY2VtZW50SWQiOiAibWFpbl9tZW51X2NoZXN0IiwgInR5cGUiOiAicmV3YXJkZWQifSwKICAgIHsgInBsYWNlbWVudElkIjogImdhbWVwbGF5X2NoZXN0IiwgInR5cGUiOiAicmV3YXJkZWQifSwKICAgIHsgInBsYWNlbWVudElkIjogImJvc3NfcmVyb2xsIiwgInR5cGUiOiAicmV3YXJkZWQifSwKICAgIHsgInBsYWNlbWVudElkIjogIm1pbmluZ19waWNrIiwgInR5cGUiOiAicmV3YXJkZWQifSwKICAgIHsgInBsYWNlbWVudElkIjogIm1hcmtldF9mcmVlX3Nsb3QiLCAidHlwZSI6ICJyZXdhcmRlZCJ9LAogICAgeyAicGxhY2VtZW50SWQiOiAiZXZlbnRfZnJlZSIsICJ0eXBlIjogInJld2FyZGVkIn0KICBdLAogICJ4c29sbGEiOiB7CiAgICAicHJvamVjdElkIjogIjI5NTU2OSIsCiAgICAic2FuZGJveCI6IGZhbHNlCiAgfQp9Cg=="
-            )
-          )
-        )
-      );
+      const config = {
+  "buildName": "magetower",
+  "name": "Mage Tower Idle Defense",
+  "version": "1.0.48f762ca",
+  "platform": "crazygames",
+  "unityGameConfig": {
+    "loaderScriptUrl": "./assets/MageTower.48f762ca.loader.js",
+    "dataUrl": "./assets/MageTower.48f762ca.data.br",
+    "frameworkUrl": "./assets/MageTower.48f762ca.framework.js",
+    "codeUrl": "./assets/MageTower.48f762ca.wasm.br",
+    "streamingAssetsUrl": "StreamingAssets",
+    "flags": [
+      "no_sidepanel"
+    ]
+  },
+  "gaConfig": {
+    "gameKey": "36fe0172a4f84cf4b6ee0588120c66dc",
+    "secretKey": "7124ef5c99d5386dfa328f5ffb21cdceaa4fe101"
+  },
+  "videoConfig": [
+    { "placementId": "level_up_x3", "type": "rewarded"},
+    { "placementId": "iap_free_gem", "type": "rewarded"},
+    { "placementId": "game_end_souls", "type": "rewarded"},
+    { "placementId": "quest_refresh", "type": "rewarded"},
+    { "placementId": "game_start_click", "type": "interstitial"},
+    { "placementId": "main_menu_chest", "type": "rewarded"},
+    { "placementId": "gameplay_chest", "type": "rewarded"},
+    { "placementId": "boss_reroll", "type": "rewarded"},
+    { "placementId": "mining_pick", "type": "rewarded"},
+    { "placementId": "market_free_slot", "type": "rewarded"},
+    { "placementId": "event_free", "type": "rewarded"}
+  ],
+  "xsolla": {
+    "projectId": "295569",
+    "sandbox": false
+  }
+}
+window.gameConfig = config;
     </script>
-    <link
-      rel="canonical"
-      href="https://www.crazygames.com/game/mage-tower-idle-defense"
-    />
   </head>
   <body style="background-color: #000">
     <noscript>You need to enable JavaScript to run this app.</noscript>
