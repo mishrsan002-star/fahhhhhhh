@@ -12159,7 +12159,7 @@
                     adFinished: () => {
                       console.log("".concat(e, ":>adFinished")), 
                         k(t.placementId, o, !0);
-                    },
+                    }, 
                     adStarted: () => {
                       console.log("".concat(e, ":>adStarted")),
                         S(t.placementId);
