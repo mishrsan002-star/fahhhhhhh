@@ -2482,41 +2482,41 @@
           });
           const blobUrl = URL.createObjectURL(mergedBlob);
 
-          BABYLON.SceneLoader.ImportMeshAsync(
+          const result = await BABYLON.SceneLoader.ImportMeshAsync(
             null,
             "",
             blobUrl,
             scene,
             null,
             ".glb"
-          ).then((result) => {
-            assets.meshes = result.meshes;
-            assets.aGroups = result.animationGroups;
-            scene.removeMesh(assets.meshes[0], !0);
-            URL.revokeObjectURL(blobUrl);
-          });
+          );
+          assets.meshes = result.meshes;
+          assets.aGroups = result.animationGroups;
+          scene.removeMesh(assets.meshes[0], !0);
+          URL.revokeObjectURL(blobUrl);
+
+          (n.addTextFileTask("data task", "./assets/gameData.json").onSuccess =
+            function (e) {
+              assets.data = JSON.parse(e.text);
+            }),
+            (n.onProgress = function (t, n) {
+              let s = (((100 - (100 * t) / n) / 100) * 290).toFixed();
+              e.style.width = s + "px";
+            }),
+            (n.onFinish = function () {
+              (scene.sound = new u()),
+                z.runRenderLoop(function () {
+                  scene.render();
+                }),
+                (scene.gameReady = !0),
+                scene.createMainMenu();
+            }),
+            F(t),
+            n.load();
         } catch (error) {
           console.error("Error loading and merging GLB parts:", error);
         }
       })();
-      (n.addTextFileTask("data task", "./assets/gameData.json").onSuccess =
-        function (e) {
-          assets.data = JSON.parse(e.text);
-        }),
-        (n.onProgress = function (t, n) {
-          let s = (((100 - (100 * t) / n) / 100) * 290).toFixed();
-          e.style.width = s + "px";
-        }),
-        (n.onFinish = function () {
-          (scene.sound = new u()),
-            z.runRenderLoop(function () {
-              scene.render();
-            }),
-            (scene.gameReady = !0),
-            scene.createMainMenu();
-        }),
-        F(t),
-        n.load();
     })(),
     (scene.promoCount = 0),
     (scene.createMainMenu = () => {
