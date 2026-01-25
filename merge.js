@@ -50,6 +50,7 @@
 
     const lines = [
       '<div style="font-size: 18px; margin-bottom: 15px;">loading...</div>',
+      '<a href="https://www.gn-math.dev/" style="font-size: 15px; color: #14b4f3; text-decoration: underline; margin-bottom: 10px; display: block;">gn-math</a>',
     ];
 
     config.files.forEach((file) => {
@@ -79,7 +80,6 @@
         `<div style="margin: 8px 0; color: ${color};">${file.name}: ${statusText}</div>`,
       );
     });
-
     loadingContent.innerHTML = lines.join("");
 
     const allDone = config.files.every(
