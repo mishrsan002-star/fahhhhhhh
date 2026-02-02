@@ -1683,7 +1683,7 @@ self.JobSchedulerDOM = class {
   async _CreateJobWorker() {
     const a = this._jobWorkers.length;
     var b = this._runtimeInterface._GetWorkerURL(this._GetWorkerScriptFolder() +
-      "jobworker.js");
+      "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/throw-a-patata-space/scripts/jobworker.js");
     b = await this._runtimeInterface.CreateWorker(b, this._baseUrl, {
       name: "JobWorker" + a
     });
@@ -1723,7 +1723,7 @@ window.C3_IsSupported && (window.c3_runtimeInterface = new self.RuntimeInterface
   projectScripts: [],
   mainProjectScript: "",
   scriptFolder: "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/throw-a-patata-space/scripts/",
-  workerDependencyScripts: ["https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/throw-a-patata-space/scripts/box2d.wasm.js"],
+  workerDependencyScripts: ["https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/throw-a-patata-space/box2d.wasm.js"],
   exportType: "html5"
 }));
 "use strict";
